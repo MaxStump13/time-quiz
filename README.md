@@ -26,7 +26,8 @@ Once an answer is selected, a function is called to check if the answer is corre
 
 When the last question is answered, or time runs out, the submission screen is displayed with the user score. ![submit](./assets/images/submit.png)
 
-If nothing or a username longer than 5 characters is input, an alert will appear informing the user to input a valid username. ![no-username](./assets/images/noUserName.PNG) ![long-username](./assets/images/longUserName.PNG)
+If nothing or a username longer than 5 characters is input, an alert will appear informing the user to input a valid username. ![no-username](./assets/images/noUserName.PNG) 
+![long-username](./assets/images/longUserName.PNG)
 
 After a valid username is input, the scoreboard is displayed from highest to lowest with the user's name and score highlighted.
 ![scoreboard](./assets/images/score.png)
