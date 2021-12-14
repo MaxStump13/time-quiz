@@ -65,7 +65,7 @@ var questions = [
     ],
   },
 ];
-//function to check if any users/score stored locally
+//function to convert JSON strings to objects and check if any previous users/scores are stored locally
 function init() {
   var storedUsers = JSON.parse(localStorage.getItem("Score"));
   if (storedUsers !== null) {
@@ -192,7 +192,12 @@ function endGame(time, timeInt) {
 submitBtn.addEventListener("click", function (event) {
   var user = { name: userNameInput.value, score: timeLeft, date: Date.now() };
   //exits function if no name is put in
-  if (user === "") {
+  if (user.name === "") {
+    alert("Must input initials to submit");
+    return;
+  }
+  else if(user.name.length>5){
+    alert("Username cannot be more than 5 characters");
     return;
   }
   //adds and sorts scores locally stored and new score
