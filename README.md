@@ -16,7 +16,7 @@ The goal was to create a timed, multiple choice, quiz that displays one question
 N/A
 
 ## Usage
-Here is the deployed link to the quiz I created. [time-quiz](https://maxstump13.github.io/timed-quiz/)
+Here is the deployed link to the quiz I created. [time-quiz](https://maxstump13.github.io/time-quiz/)
 
 This is what the quiz home page looks like. ![quiz-home](./assets/images/home.PNG)
 
