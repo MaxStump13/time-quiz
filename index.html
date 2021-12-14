@@ -8,30 +8,36 @@
     <title>Timed Quiz</title>
   </head>
   <body>
+    <!-- container for entire quiz -->
     <section id= "container">
+      <!-- home page with start button -->
       <section id="home">
         <h1>Timed Coding Quiz</h1>
         <p>This is a timed, 5 question quiz</p>
         <button id="start" class="start btn">Start Quiz</button>
       </section>
+      <!-- display for time/score -->
       <section><h1 id ="time"></h1></section>
+      <!-- container to display question/answer buttons, hidden until removed by functions in quiz -->
       <section id="question-container" class="hide">
         <section id="question"></section>
         <section id="answer-btns">
         </section>
       </section>
+      <!-- end of quiz page with input field and submit button, hidden until removed by functions in quiz -->
       <section id="end" class="hide">
         <input type="text" id="initials" placeholder="Your Initials"/>
         <button id="submit" class="btn">Submit</button>
       </section>
+      <!-- score board with reset and clear buttons, and ol for users/scores and hidden until built/removed by functions-->
       <section id="scoreBoard" class="hide">
         <h3>Score Board</h3>
         <ol id="scores"></ol>
         <button id ="rst" class ="btn">Restart</button>
         <button id ="clear" class = "btn">Clear</button>
       </section>
+      <!-- display for correct/wrong -->
       <section><h2 id = "correct"></h2></section>
-
     </section>
     <script src="./assets/js/script.js"></script>
   </body>

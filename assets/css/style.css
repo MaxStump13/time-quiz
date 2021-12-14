@@ -1,90 +1,113 @@
-*, *::before, *::after{
-    box-sizing: border-box;;
+/* allows height and width to be used  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+/* colors page background */
 html {
-    background-color: lightgrey;
+  background-color: lightgrey;
 }
-body, #home, #answer-btns, #container{
-    display: flex;
+/* creates flex boxes */
+body,
+#home,
+#answer-btns,
+#container {
+  display: flex;
 }
-body, #home, #container{
-    justify-content: center;
-    align-items: center;
+/* aligns children in the center of the page */
+body,
+#home,
+#container {
+  justify-content: center;
+  align-items: center;
 }
-
-#home, #container{
-    flex-direction: column;
+/* makes flex boxes into columns */
+#home,
+#container {
+  flex-direction: column;
 }
-body, #home{
-    height: 100vh;
+/* children can use full page height */
+body,
+#home {
+  height: 100vh;
 }
 body {
-    margin: 5px;
+  margin: 5px;
 }
-#home h1{
-    font-size: 48px;
+#home h1 {
+  font-size: 48px;
+  text-align: center;
+}
+#home p {
+  font-size: 24px;
+}
+/* class to hide elements that shouldn't be displayed during different functions */
+.hide {
+  display: none;
+}
+/* spaces buttons out */
+#answer-btns {
+  justify-content: space-around;
+}
+/* sets dimensions and colors of buttons */
+.btn {
+  background-color: blue;
+  color: white;
+  font-size: 18px;
+  width: 120px;
+  margin-top: 10px;
+  height: 50px;
+}
+/* sets the height of the submit button */
+#submit {
+  height: 27px;
+}
+/* height of the entire container */
+#container {
+  height: 225px;
+}
+#question {
+  margin: 10px;
+  padding: 5px;
+  font-size: 28px;
+}
+li,
+#initials {
+  font-size: 18px;
+  font-weight: bold;
+}
+/* highlights the newest score, making it easier to see on scoreboard */
+.new {
+  background-color: lightpink;
+}
+/* styles correct or wrong popups */
+#correct {
+  font-style: italic;
+  color: rgb(53, 53, 53);
+}
+#scores {
+  padding-bottom: 10px;
+}
+h3,
+#scores {
+  border-bottom: 3px solid black;
+  margin: 10px 0px;
+}
+/* makes buttons, input, and text centered and in columns for smaller screens */
+@media (max-width: 550px) {
+  #answer-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+  #end,
+  #time {
     text-align: center;
-}
-#home p{
-    font-size: 24px;
-}
-.hide{
-    display : none;
-}
-
-#answer-btns{
-    justify-content: space-around;
-}
-.btn{
-    background-color: blue;
-    color:white;
-    font-size: 18px;
-    width: 120px;
-    margin-top: 10px;
-    height: 50px;
-}
-#submit{
-    height:27px;
-}
-#container{
-    height: 225px;
-}
-#question{
-    margin: 10px;
-    padding: 5px;
-    font-size: 28px;
-}
-li, #initials{
-    font-size: 18px;
-    font-weight: bold;
-}
-.new{
-    background-color: lightpink;;
-}
-#correct{
-    font-style: italic;
-    color:rgb(53, 53, 53);
-}
-#scores{
-    padding-bottom: 10px;
-}
-h3, #scores{
-    border-bottom: 3px solid black;
-    margin: 10px 0px;
-}
-
-@media(max-width:550px){
-    #answer-btns{
-        flex-direction: column;
-        align-items: center; 
-    }
-    #end, #time{
-        text-align: center;
-    }
-    #time{
-        margin: 5px;
-    }
-    #initials{
-        width: 75%
-    }
+  }
+  #time {
+    margin: 5px;
+  }
+  #initials {
+    width: 75%;
+  }
 }
