@@ -18,22 +18,22 @@ N/A
 ## Usage
 Here is the deployed link to the quiz I created. [time-quiz](https://maxstump13.github.io/time-quiz/)
 
-This is what the quiz home page looks like. ![quiz-home](./assets/images/home.PNG)
+This is what the quiz home page looks like. ![quiz-home](./assets/images/home.png)
 
-Once the start button is clicked, a timer begins to count down and the first question/answers are displayed as seen below. ![question1](./assets/images/qs.PNG)
+Once the start button is clicked, a timer begins to count down and the first question/answers are displayed as seen below. ![question1](./assets/images/qs.png)
 
-Once an answer is selected, a function is called to check if the answer is correct. A message will be displayed with the result, and if incorrect, 10 seconds will be subtracted. Both are shown below. ![correct-answer](./assets/images/correct.PNG) ![wrong-answer](./assets/images/wrong.PNG)
+Once an answer is selected, a function is called to check if the answer is correct. A message will be displayed with the result, and if incorrect, 10 seconds will be subtracted. Both are shown below. ![correct-answer](./assets/images/correct.png) ![wrong-answer](./assets/images/wrong.png)
 
-When the last question is answered, or time runs out, the submission screen is displayed with the user score. ![submit](./assets/images/submit.PNG)
+When the last question is answered, or time runs out, the submission screen is displayed with the user score. ![submit](./assets/images/submit.png)
 
 If nothing or a username longer than 5 characters is input, an alert will appear informing the user to input a valid username. ![no-username](./assets/images/noUserName.PNG) ![long-username](./assets/images/longUserName.PNG)
 
 After a valid username is input, the scoreboard is displayed from highest to lowest with the user's name and score highlighted.
-![scoreboard](./assets/images/score.PNG)
+![scoreboard](./assets/images/score.png)
 
-From this screen, the user has the option to restart the quiz, or clear the previous score. If restart is chosen, the timer restarts and question one is displayed. If clear is selected, all users/scores on the leaderboard will be deleted. ![clear-scores](./assets/images/clearScore.PNG)
+From this screen, the user has the option to restart the quiz, or clear the previous score. If restart is chosen, the timer restarts and question one is displayed. If clear is selected, all users/scores on the leaderboard will be deleted. ![clear-scores](./assets/images/clearScore.png)
 
-The quiz can also be taken on smaller screens. The button options are listed vertically instead. ![mobile-quiz](./assets/images/mobile.PNG)
+The quiz can also be taken on smaller screens. The button options are listed vertically instead. ![mobile-quiz](./assets/images/mobile.png)
 
 
 
